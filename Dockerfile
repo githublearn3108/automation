@@ -1,8 +1,6 @@
-FROM ubuntu
+FROM centos:latest
 MAINTAINER ageforsign@gmail.com
-RUN ENV TZ=Asia/Kolkata
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-RUN apt-get update && apt-get install -y apache2 \
+RUN yum install -y httpd \
   zip \
  unzip
 WORKDIR /var/www/html
