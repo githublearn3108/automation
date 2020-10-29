@@ -8,5 +8,5 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page258/lo
 RUN unzip loxury.zip
 RUN cp -rvf loxury/* .
 RUN rm -rf loxury loxury.zip
-CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
