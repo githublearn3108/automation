@@ -4,9 +4,9 @@ RUN apt-get install -y apache2 \
   zip \
  unzip
 WORKDIR /var/www/html
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page255/currency-exchange.zip /var/www/html
-RUN unzip currency-exchange.zip
-RUN cp -rvf currency-exchange/* .
-RUN rm -rf currency-exchange currency-exchange.zip
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page258/loxury.zip /var/www/html
+RUN unzip loxury.zip
+RUN cp -rvf loxury/* .
+RUN rm -rf loxury loxury.zip
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
 EXPOSE 80
