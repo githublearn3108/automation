@@ -1,6 +1,6 @@
 FROM ubuntu
 MAINTAINER ageforsign@gmail.com
-RUN apt-get install -y apache2 \
+RUN apt-get update && apt-get install -y apache2 \
   zip \
  unzip
 WORKDIR /var/www/html
